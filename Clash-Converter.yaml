@@ -1,4 +1,18 @@
 rule-providers:
+  personal_direct:
+    url: https://raw.githubusercontent.com/EmccK/ClashRule/refs/heads/main/Direct.yaml
+    path: ./ruleset/personal_direct.yaml
+    behavior: classical
+    interval: 86400
+    format: yaml
+    type: http
+  personal_proxy:
+    url: https://raw.githubusercontent.com/EmccK/ClashRule/refs/heads/main/Proxy.yaml
+    path: ./ruleset/personal_proxy.yaml
+    behavior: classical
+    interval: 86400
+    format: yaml
+    type: http
   private:
     url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.yaml
     path: ./ruleset/private.yaml
@@ -184,7 +198,9 @@ proxy-groups:
     type: select
 
 rules:
+  - "RULE-SET,personal_direct,DIRECT"
   - "RULE-SET,private,DIRECT"
+  - "RULE-SET,personal_proxy,PROXY"
   - "RULE-SET,bing,AIGC"
   - "RULE-SET,copilot,AIGC"
   - "RULE-SET,bard,AIGC"
