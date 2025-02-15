@@ -124,6 +124,7 @@ proxy-groups:
       - SG AUTO
       - JP AUTO
       - US AUTO
+      - US SELECT
   - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Urltest.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
@@ -137,6 +138,7 @@ proxy-groups:
       - SG AUTO
       - JP AUTO
       - US AUTO
+      - US SELECT
   - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png
     name: Telegram
     type: select
@@ -145,6 +147,7 @@ proxy-groups:
       - SG AUTO
       - JP AUTO
       - US AUTO
+      - US SELECT
   - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Google.png
     name: Google
     type: select
@@ -153,6 +156,7 @@ proxy-groups:
       - SG AUTO
       - JP AUTO
       - US AUTO
+      - US SELECT
   - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
@@ -181,6 +185,12 @@ proxy-groups:
     name: US AUTO
     type: url-test
     interval: 300
+  - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
+    include-all: true
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
+    filter: (?i)美国|USA|US|🇺🇸
+    name: US SELECT
+    type: select
   - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
@@ -194,6 +204,7 @@ proxy-groups:
       - SG AUTO
       - JP AUTO
       - US AUTO
+      - US SELECT
     name: GLOBAL
     type: select
 
